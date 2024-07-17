@@ -8,6 +8,6 @@ Step 3: pip install -r requirements.txt
 
 Step 4: Create a .env variable with your OpenAI API key, with the name: OPENAI_API_KEY
 
-Step 4: Run the create_db notebook, to create the Chroma Vector DB
+Step 5: Run the create_db notebook, to create the Chroma Vector DB
 
-Step 5: Query ChatGPT with the Chroma Vector DB by typing in the command prompt: python query.py "your question"
+Step 6: Query ChatGPT with the Chroma Vector DB by typing in the command prompt: python query.py "your question"
