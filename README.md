@@ -50,14 +50,8 @@ Execute all cells in the notebook to create the database.
 
 To query ChatGPT using the Chroma Vector DB, use the following command:
 
+For example write a prompt related to the downloaded HTML files:
 ```bash
-python query.py "your question here"
+python query.py "Fortæl mig om onkologisk afdeling"
 ```
 
-Replace `"your question here"` with your actual query.
-
-## 🤔 Need Help?
-
-If you encounter any issues or have questions, please open an issue in this repository or contact the maintainer.
-
-Happy querying! 🎉
