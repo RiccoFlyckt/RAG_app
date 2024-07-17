@@ -1,13 +1,13 @@
-# 🚀 Application Setup Guide
+# Application Setup Guide
 
 This guide will walk you through the process of setting up and running the application. Follow these steps to get started!
 
-## 📋 Prerequisites
+## Prerequisites
 
 - [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/) installed on your system
 - [OpenAI API key](https://platform.openai.com/account/api-keys)
 
-## 🛠️ Setup Instructions
+## Setup Instructions
 
 ### 1. Create and Activate Conda Environment
 
