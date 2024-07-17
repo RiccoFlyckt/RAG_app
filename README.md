@@ -1,13 +1,63 @@
-# How to run the application
+# 🚀 Application Setup Guide
 
-Step 1: conda create --name myenv python=3.12.4
+This guide will walk you through the process of setting up and running the application. Follow these steps to get started!
 
-Step 2: conda activate myenv
+## 📋 Prerequisites
 
-Step 3: pip install -r requirements.txt
+- [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/) installed on your system
+- [OpenAI API key](https://platform.openai.com/account/api-keys)
 
-Step 4: Create a .env variable with your OpenAI API key, with the name: OPENAI_API_KEY
+## 🛠️ Setup Instructions
 
-Step 5: Run the create_db notebook, to create the Chroma Vector DB
+### 1. Create and Activate Conda Environment
 
-Step 6: Query ChatGPT with the Chroma Vector DB by typing in the command prompt: python query.py "your question"
+```bash
+# Create a new conda environment
+conda create --name myenv python=3.12.4
+
+# Activate the environment
+conda activate myenv
+```
+
+### 2. Install Dependencies
+
+```bash
+# Install required packages
+pip install -r requirements.txt
+```
+
+### 3. Configure API Key
+
+Create a `.env` file in the project root and add your OpenAI API key:
+
+```bash
+echo "OPENAI_API_KEY=your_api_key_here" > .env
+```
+
+Replace `your_api_key_here` with your actual OpenAI API key.
+
+### 4. Create Chroma Vector DB
+
+Run the `create_db` notebook to create the Chroma Vector DB:
+
+```bash
+jupyter notebook create_db.ipynb
+```
+
+Execute all cells in the notebook to create the database.
+
+### 5. Query ChatGPT with Chroma Vector DB
+
+To query ChatGPT using the Chroma Vector DB, use the following command:
+
+```bash
+python query.py "your question here"
+```
+
+Replace `"your question here"` with your actual query.
+
+## 🤔 Need Help?
+
+If you encounter any issues or have questions, please open an issue in this repository or contact the maintainer.
+
+Happy querying! 🎉
