@@ -3,6 +3,7 @@ beautifulsoup4==4.12.3
 openai==1.35.14
 langchain_community==0.2.7
 langchain==0.2.9
-langchain_openai
+langchain_openai==0.1.17
 python-dotenv
 chromadb==0.5.4
+ipykernel==6.29.5
