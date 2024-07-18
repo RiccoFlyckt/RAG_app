@@ -52,7 +52,7 @@ def prepare_database() -> Chroma:
 def search_database(db: Chroma, query_text: str, threshold: float = 0.7) -> List[List[str]]: # The threshold is 0.7 if nothing else is specified
     """
     Search the database for documents similar to the query text.
-    Only return documents with a relevance score above the threshold.
+    Only return documents with a relevance score above the threshold, defaulted to 0.7.
     """
     results = db.similarity_search_with_relevance_scores(query_text, k=3) 
     return [[result, score] for result, score in results if score >= threshold] # Only a doc is returned, if a doc has a score higher than the specified threshold.
@@ -62,7 +62,7 @@ def format_context(filtered_results: List[List[str]]) -> Tuple[str, Set[str]]:
     Format the context texts and sources from the filtered results.
     """
     context_texts = []
-    sources = set()
+    sources = set() #A set was utilized, as we dont want duplicates of sources.
     for doc, _score in filtered_results:
         context_texts.append(doc.page_content)
         sources.add(doc.metadata.get("url", "No URL available")) #if no url is available, we specify that we did not find an url
@@ -79,7 +79,7 @@ def get_response(GPTMODEL: str,prompt: str, api_key: str) -> str:
     """
     Get the response from the ChatOpenAI model using the prompt and API key.
     """
-    model = ChatOpenAI(model = GPTMODEL,api_key=api_key, max_tokens=4000, temperature=0.2)
+    model = ChatOpenAI(model = GPTMODEL,api_key=api_key, max_tokens=4000, temperature=0.2) # We wanted the model to be more precise and less creative, and hence found a temperature of 0.2 as good. 
     response = model.invoke(prompt)
     return response.content # Only return the content of the response
 
