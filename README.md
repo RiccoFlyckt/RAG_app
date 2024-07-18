@@ -1,7 +1,6 @@
 # Application Setup Guide
 
-This guide will walk you through the process of setting up and running the application. Follow these steps to get started!
-
+This guide will walk you through the process of setting up and running the application.
 ## Prerequisites
 
 - [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/) installed on your system
