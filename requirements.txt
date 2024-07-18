@@ -4,6 +4,6 @@ openai==1.35.14
 langchain_community==0.2.7
 langchain==0.2.9
 langchain_openai==0.1.17
-python-dotenv
+python-dotenv==0.21.0
 chromadb==0.5.4
 ipykernel==6.29.5
