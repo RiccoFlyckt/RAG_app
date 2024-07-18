@@ -45,7 +45,7 @@ Replace `your_api_key_here` with your actual OpenAI API key.
 
 ### 5. Create Chroma Vector DB
 
-Run the `create_db` notebook to create the Chroma Vector DB:
+Run the `create_db` notebook to create the Chroma Vector DB with the RAG App kernel:
 
 ```bash
 jupyter notebook create_db.ipynb
