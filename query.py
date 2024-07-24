@@ -7,7 +7,7 @@ from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
 from typing import List, Set, Tuple
 
-GPTMODEL = 'gpt-3.5-turbo-0125' #ChatGPT modelname
+GPTMODEL = "gpt-4o-mini" #ChatGPT modelname
 CHROMA_PATH = "chroma"  #Vector DB path
 PROMPT_TEMPLATE = """
 Dem der skriver er kun ansatte fra Vejle Sygehus. Vejle Sygehus er en del af Sygehus Lillebælt. Det er meget vigtigt at du er sød og flink overfor brugerne. Klokken er nu: {current_time}. Når der er et spørgsmål, hvor du nævner klokken eller tid, skal du altid skrive svaret baseret på tidspunktet, efterfulgt af dit svar. Det er MEGET vigtigt at du også skriver klokken til personen.Svar på spørgsmålet baseret på den følgende kontekst:
