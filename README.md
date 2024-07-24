@@ -12,7 +12,7 @@ This guide will walk you through the process of setting up and running the appli
 
 ```bash
 # Create a new conda environment
-conda create --name myenv python=3.12.4
+conda create --name myenv python=3.12.4 -y
 
 # Activate the environment
 conda activate myenv
